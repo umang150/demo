@@ -21,7 +21,12 @@ Route::get('about/{name}', function ($name) {
     return view('about',['name'=>$name]);
 });
 
-Route::get('contact', function () {
+Route::get('contact/{name}', function ($name) {
     return view('Contact');
 });
 
+
+// Test
+Route::get('contact/{name}', function ($name) {
+    return view('Contact');
+});
